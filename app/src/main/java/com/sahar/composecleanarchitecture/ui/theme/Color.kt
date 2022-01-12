@@ -8,6 +8,8 @@ val Purple700 = Color(0xFF3700B3)
 val Teal200 = Color(0xFF03DAC5)
 val Black = Color.Black
 val White = Color.White
+val YellowAlpha = Color(0xFFFFEFD5)
+val darkGray = Color(0x8CD3D3D3)
 
 
 val Red700 = Color(0xffdd0d3c)

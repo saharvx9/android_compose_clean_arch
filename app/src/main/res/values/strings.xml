@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ComposeCleanArchitecture</string>
+
+
+   <!-- ~~~~~~~~~~~~~~~~~~~~ Dialog Module ~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="dialog_module_message_param">%1$s</string>
+    <string name="dialog_module_ok_button">OK</string>
+    <string name="dialog_module_dismiss_button">Dismiss</string>
+    <string name="dialog_module_general_error_title">Error</string>
+    <string name="dialog_module_general_error_subtitle">Something went wrong</string>
+
+    <string name="dialog_module_do_task_title">Do Task</string>
+
+
 </resources>

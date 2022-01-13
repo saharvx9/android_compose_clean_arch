@@ -9,10 +9,6 @@ import com.simform.ssjetpackcomposeprogressbuttonlibrary.SSButtonState
 import com.simform.ssjetpackcomposeprogressbuttonlibrary.SSButtonType
 import com.simform.ssjetpackcomposeprogressbuttonlibrary.SSJetPackComposeProgressButton
 
-//enum class SSButtonState {
-//    IDLE, LOADING, SUCCESS, FAILIURE
-//}
-
 sealed class ProgressButtonState(val state: SSButtonState,val enable:Boolean = true){
     class Enable(enable: Boolean):ProgressButtonState(SSButtonState.IDLE, enable = enable)
     class Loading():ProgressButtonState(SSButtonState.LOADING, enable = false)

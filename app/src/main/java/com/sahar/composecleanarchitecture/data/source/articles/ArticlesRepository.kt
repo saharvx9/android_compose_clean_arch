@@ -8,13 +8,10 @@ import javax.inject.Inject
 class ArticlesRepository
 @Inject constructor(
     private val local: ArticlesDataSource.Local,
-    private val remote: ArticlesDataSource.Remote
-) {
-
+    private val remote: ArticlesDataSource.Remote) {
 
     fun loadArticles(forceFetch: Boolean): Flow<List<ArticleItem>> {
         return flow {
-
             emitAll(local.loadArticles())
             if (!forceFetch) return@flow
             val list = remote.loadBitCoinArticles()
@@ -25,7 +22,6 @@ class ArticlesRepository
                     it
                 }
             emitAll(list)
-
         }
     }
 
